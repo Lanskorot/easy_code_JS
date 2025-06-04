@@ -384,6 +384,176 @@
 
 
 
+
+
+.main{
+	width: 90vw;
+	margin: 0 auto;
+	margin-top: 4vw;
+	display: flex;
+	flex-direction: row;
+    gap: 3vw; /* расстояние между элементами */
+}
+
+
+.main_info{
+	width: 48vw;
+	h1{
+		font-family: var(--second-family);
+		font-weight: 900;
+		font-size: 36px;
+		color: var(--gray-900);
+		width: 95%;
+		margin-bottom: 1vw;
+	}
+	p{
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 20px;
+		color: var(--gray-900);
+		margin-bottom: 1vw;
+	}
+    img {
+        width: 100%;
+      }
+}
+
+
+.main_calculate{
+	background: var(--gray-50);
+	border-radius: 16px;
+	padding: 24px 27px;
+	width: 48%;
+	height: 584px;	
+	margin: 0 auto;
+
+	h2{
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 30px;
+		text-align: center;
+		color: var(--gray-900);
+	}
+	p{
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 16px;
+		text-align: center;
+		color: var(--gray-900);
+		margin-bottom: 28px;
+	}
+	.button {
+  		all: unset;
+  		/* Добавьте желаемые стили после сброса */
+		border-radius: 4px;
+		display: block;
+		width: 505px;
+		height: 44px;
+		background: var(--purple-500);
+		text-align: center;
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 16px;
+		color: var(--gray-50);
+		margin: 0 auto;
+	}
+}
+
+
+.user-info__item_name{
+
+	margin: 0 auto;
+	border: 2px solid var(--gray-900);
+	border-radius: 4px;
+	padding: 12px;
+	width: 496px;
+	height: 48px;
+	margin-bottom: 24px;
+}
+.user-info__item{
+
+	margin: 0 auto;
+	border: 2px solid var(--gray-900);
+	border-radius: 4px;
+	padding: 12px;
+	width: 236px;
+	height: 48px;
+}
+
+input {
+  all: unset; /* Сбрасывает почти все стили */
+  box-sizing: border-box; /* Чтобы размеры считались правильно */
+  width: 100%; /* По желанию, чтобы занимали всю ширину контейнера */
+  font-family: inherit; /* Наследовать шрифт родителя */
+  font-size: inherit; /* Наследовать размер шрифта */
+  color: inherit; /* Наследовать цвет текста */
+  /* Добавьте свои стили, например: */
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gray-400);
+}
+
+.user-info{
+	input{
+		all: unset;
+		box-sizing: border-box;
+		width: 105%;
+		height: 210%;
+		margin-top: -5%;
+		margin-left: -2%;
+	}
+
+}
+
+
+
+.first{
+	width: 525px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 24px;
+	padding: 0;
+
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+label.error.fail-alert {
+	/* border: 2px solid red; */
+	display: block;       /* Сделать блочным элементом */
+    width: 100%;          /* Занять всю ширину родителя */
+
+    color: rgba(255, 0, 17, 0.8);
+	border-radius: 4px;
+	line-height: 1;
+	padding: 2px 0 6px 6px;
+	/* background: #ffe6eb; */
+	}
+
+
+    input.error, textarea.error {
+       /*  border: 3px dashed red; */
+       box-shadow: 0px 0px 8px 5px red;
+       border: none;
+     
+    }
+
+    input.error:focus, 
+    input.error:active{
+        border: none;
+        outline: none;
+    }
+
+
 @media(max-width: 768px){
 	.intro {
         .container {
